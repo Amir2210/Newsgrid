@@ -1,0 +1,149 @@
+/* navbar */
+
+#navbar .icons{
+  display: none;
+}
+
+#navbar .container{
+  align-items: center;
+  justify-content: center;
+  grid-template-areas: 
+  'logo'
+  'menu';
+}
+
+#navbar img{
+  width: 270px;
+  padding: 0.5rem;
+}
+
+/* cards */
+
+#editor-pick .card-grid{
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-gap: 1rem;
+}
+
+#editor-pick .card-grid .card:first-child,
+#editor-pick .card-grid .card:last-child{
+  grid-template-columns: 1fr;
+  grid-column: 1;
+}
+
+#editor-pick .card-grid .card:last-child{
+  grid-column: 1 / span 2;
+}
+
+/* footer */
+
+#footer{
+  padding: 20px;
+}
+
+/* form */
+
+#join-form h1{
+  margin-bottom: 1rem;
+  font-weight: bolder;
+  font-size: 20px;
+}
+
+.form button{
+  background: #1ad19a;
+  margin-top: 1rem;
+  width: 90%;
+}
+
+
+@media(max-width: 600px) {
+  #showcase p{
+    font-size: 12px;
+  }
+
+  #showcase .mobile{
+    display: none;
+  }
+
+  #showcase button{
+    margin:10px  0;
+  }
+
+  #showcase h1{
+    font-weight: bolder;
+    font-size: 45px;
+    line-height: 1.2;
+  }
+
+  #editor-pick .card-grid{
+    grid-template-columns: 1fr;
+    grid-gap: 1.2rem;
+  }
+
+  #editor-pick .card-grid .card:last-child{
+    grid-column: 1 
+  }
+
+  #footer .container{
+    text-align: center;
+    grid-gap: 1.5rem;
+    padding: 1rem;
+    grid-template-columns: 1fr;
+  }
+
+  #footer .container div:last-child{
+    grid-column: 1 
+  }
+
+  #footer .container div{
+    border-bottom: dotted 4px #444;
+    padding-bottom: 1rem;
+    margin: 10px 0;
+  }
+
+  #footer .container ul li{
+    text-align: start;
+  }
+
+  #footer .container div:nth-child(4),
+  #footer .container div:nth-child(3){
+    border:none ;
+  }
+
+  #about-main .container{
+    grid-template-columns: 1fr ;
+  }
+
+  #about-main .container div:last-child{
+    text-align: center;
+  }
+
+  #about-main{
+    padding: 15px;
+  }
+
+  #about-main h1{
+    font-size: 21px;
+  }
+
+  #article-main .container{
+    grid-template-columns:1fr ;
+  }
+
+  #article-main .container div:nth-child(3){
+    text-align: center;
+  }
+
+  .form{
+    width: 80%;
+    height: 90%;
+  }
+
+  #join-form h1{
+    font-size: 25px;
+  }
+
+  
+
+
+}
