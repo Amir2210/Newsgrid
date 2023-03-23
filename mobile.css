@@ -130,6 +130,16 @@
     grid-template-columns:1fr ;
   }
 
+  #article-main .container div:nth-child(2){
+   display: none;
+  }
+
+  #article-main .container .wiritten{
+    display: grid;
+    grid-template-columns:1fr ;
+  }
+
+
   #article-main .container div:nth-child(3){
     text-align: center;
   }

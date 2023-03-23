@@ -347,7 +347,13 @@ margin-bottom: 1rem;
 #article-main .container div:nth-child(2){
   background: white;
   padding: 0.5rem;
+  
 }
+
+#article-main .container .wiritten{
+  /* display: none; */
+}
+
 
 #article-main .container div:last-child{
   background: var(--orange-color);
